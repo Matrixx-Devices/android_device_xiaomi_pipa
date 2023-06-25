@@ -22,6 +22,7 @@ TARGET_SCREEN_DENSITY := 400
 TARGET_KERNEL_CONFIG += vendor/xiaomi/pipa.config
 
 # Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Sepolicy

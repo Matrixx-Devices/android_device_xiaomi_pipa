@@ -8,5 +8,5 @@ on boot
     # WiFi country code
     setprop ro.boot.wificountrycode US
 
-on property:persist.sys.parts.pen=*
-    exec /system/bin/xiaomi-pen ${persist.sys.parts.pen}
+on property:persist.vendor.parts.pen=*
+    exec /vendor/bin/xiaomi-pen ${persist.vendor.parts.pen}

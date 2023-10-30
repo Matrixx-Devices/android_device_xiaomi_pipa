@@ -23,6 +23,9 @@ TARGET_KERNEL_CONFIG += vendor/xiaomi/pipa.config
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# Sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Wi-Fi
 SOONG_CONFIG_XIAOMI_KONA_WIFI_SYMLINK_VERSION := v2
 

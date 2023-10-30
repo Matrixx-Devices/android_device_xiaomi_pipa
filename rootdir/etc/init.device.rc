@@ -8,5 +8,15 @@ on boot
     # WiFi country code
     setprop ro.boot.wificountrycode US
 
+    chown system system /dev/xiaomi-touch
+    chmod 0664 /dev/xiaomi-touch
+
+service xiaomi-pen /vendor/bin/xiaomi-pen ${persist.vendor.parts.pen}
+    class main
+    user system
+    group system input
+    oneshot
+    disabled
+
 on property:persist.vendor.parts.pen=*
-    exec /vendor/bin/xiaomi-pen ${persist.vendor.parts.pen}
+    start xiaomi-pen

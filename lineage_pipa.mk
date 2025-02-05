@@ -11,6 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # Inherit some common lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
+# Matrixx
+MATRIXX_BUILD_TYPE := Official
+MATRIXX_MAINTAINER := Aryan
+MATRIXX_CHIPSET := Snapdragon 870
+MATRIXX_BATTERY := 8840mAh
+MATRIXX_DISPLAY := 1800x2880
+WITH_GMS := false
+
 # Inherit from pipa device
 $(call inherit-product, device/xiaomi/pipa/device.mk)
 

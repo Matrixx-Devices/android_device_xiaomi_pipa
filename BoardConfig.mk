@@ -7,9 +7,6 @@
 # Inherit from sm8250-common
 include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 
-# Inherit from proprietary files for miuicamera
--include vendor/xiaomi/pipa-miuicamera/products/board.mk
-
 DEVICE_PATH := device/xiaomi/pipa
 
 # Board
